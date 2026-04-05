@@ -1,0 +1,14 @@
+// ======================= why choose us three css start ==========================
+.percentage-two::after {
+    background-color: var(--main-two-600);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+// ======================= why choose us three css end ==========================

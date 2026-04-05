@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Kidschool - Education, Kindergarten, Preschool, and Children Learning Center HTML Template. Creative design, fully responsive, and easy to customize for daycare centers, nursery schools, and childcare institutions.">
+  <meta name="keywords"
+    content="Kidschool, Kindergarten, Preschool, Nursery, Daycare, Children Education, Kids Learning Center, School Website Template, Creative Kids Template, Bootstrap Kidschool">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Kidschool - Preschool & Kindergarten HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!-- magnipic -->
+  <link rel="stylesheet" href="assets/css/magnipic-popup.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!-- ========================== Settings Panel start ==================================== -->
+<div
+  class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center"
+>
+  <button
+    type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center"
+  >
+    <i
+      class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"
+    ></i>
+    <i
+      class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"
+    ></i>
+  </button>
+
+  <div
+    class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto"
+  >
+    <div class="d-flex flex-column tw-gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
+          <button
+            type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
+          >
+            Animate
+          </button>
+          <button
+            type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
+          >
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons d-flex tw-gap-4">
+          <button
+            type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
+          >
+            LTR
+          </button>
+          <button
+            type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
+          >
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="side-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- Custom Toast Message start -->
+  <div id="toast-container"></div>
+  <!-- Custom Toast Message End -->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <div class="progress-wrap cursor-big">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+  <!-- Custom Cursor Start -->
+  <div class="cursor"></div>
+  <span class="dot"></span>
+  <!-- Custom Cursor End -->
+
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-xl-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-white bg-neutral-500 hover-bg-neutral-900 hover-text-white"> 
+        <i class="ph ph-x"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <a href="index-2.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+  <li class="nav-menu__item has-submenu activePage">
+    <a
+      href="javascript:void(0)"
+      class="nav-menu__link tw-pe-5 text-neutral-950 tw-py-5 fw-medium w-100"
+      >Home</a
+    >
+
+    <!-- mega menu start -->
+<div
+  class="mega-menu tw-p-6 tw-rounded-lg scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md tw-duration-200 tw-z-99">
+  <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-4">
+    <div class="col">
+      
+        <button
+          type="button"
+          class="toggle-mobileMenu leading-none d-xl-none ms-3 text-neutral-800 tw-text-9"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+      <!-- Header Right End  -->
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+    <!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb pt-110 pb-70 bg-main-two-200 position-relative">
+    <img src="assets/images/shape/banner-shape2.png" alt="shape" class="position-absolute bottom-0 tw-start-0 w-100">
+    <img src="assets/images/shape/newslater-three-shape1.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-15 d-lg-block d-none animation-upDown">
+    <img src="assets/images/shape/newslater-three-shape2.png" alt="shape" class="position-absolute bottom-0 tw-start-0 tw-h-382-px tw-ms-250-px d-lg-block d-none">
+    <img src="assets/images/shape/newsletter-shape2.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt-130-px tw-ms-480-px animation-rotate-right d-xl-block d-none">
+    <div class="tw-mb-140-px w-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div>
+                        <h3 class="text-center tw-mb-6 text-neutral-950"> Our FAQ’s</h3>
+                        <ul class="d-flex align-items-center justify-content-center tw-gap-4">
+                            <li></li>
+                            <li><i class="text-main-600 hover-text-main-700 tw-text-405">/</i></li>
+                            <li> <span class="text-main-600 hover-text-main-700 tw-text-405"> Our FAQ’s </span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+    <!-- =========================== faq section start =========================== -->
+<section class="py-110">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1500">
+                <span class="bg-img">
+                    <img src="assets/images/thumbs/faq-three-img1.png" alt="img" class="bg-img">
+                </span>
+            </div>
+            <div class="col-lg-7">
+                <div class="tw-ps-8">
+                    <div class="tw-mb-6">
+                        <span class="fw-normal tw-text-405 text-main-600 tw-mb-5" data-aos-delay="100" data-aos="fade-up" data-aos-duration="600">
+                            Our Common FAQ’s
+                        </span>
+                        <h4 class="fw-bold text-neutral-950" data-aos-delay="200" data-aos="fade-up" data-aos-duration="600">
+                            Our Common FAQ’s
+                        </h4>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="100" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is included in your services?
+                            </button>
+                            <div id="collapseOne" class="accordion-collapse collapse show"  data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="150" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Is toilet training required before enrollment?
+                            </button>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="200" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What safety measures do you have in place?
+                            </button>
+                            <div id="collapseThree" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="250" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do you celebrate birthdays or special events?
+                            </button>
+                            <div id="collapseFour" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-rounded-4xl" data-aos-delay="300" data-aos="fade-up" data-aos-duration="600"> 
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What is the student-to-teacher ratio?
+                            </button>
+                            <div id="collapseFive" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== faq section end =========================== -->
+
+<!-- ========================== faq bottom section start ======================== -->
+<section class="pb-110">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-7">
+                <div class="tw-ps-8">
+                    <div class="tw-mb-6">
+                        <span class="fw-normal tw-text-405 text-main-600 tw-mb-5" data-aos-delay="100" data-aos="fade-up" data-aos-duration="600">
+                            Our Common FAQ’s
+                        </span>
+                        <h4 class="fw-bold text-neutral-950" data-aos-delay="200" data-aos="fade-up" data-aos-duration="600">
+                            Our Common FAQ’s
+                        </h4>
+                    </div>
+                    <div class="accordion" id="accordionExample-two">
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="100" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-One" aria-expanded="true" aria-controls="collapse-two-One">
+                                What is included in your services?
+                            </button>
+                            <div id="collapse-two-One" class="accordion-collapse collapse show"  data-bs-parent="#accordionExample-two">
+                                 <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="150" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-Two" aria-expanded="false" aria-controls="collapse-two-Two">
+                                Is toilet training required before enrollment?
+                            </button>
+                            <div id="collapse-two-Two" class="accordion-collapse collapse"  data-bs-parent="#accordionExample-two">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="200" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-Three" aria-expanded="false" aria-controls="collapse-two-Three">
+                                What safety measures do you have in place?
+                            </button>
+                            <div id="collapse-two-Three" class="accordion-collapse collapse"  data-bs-parent="#accordionExample-two">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-mb-4 tw-rounded-4xl" data-aos-delay="250" data-aos="fade-up" data-aos-duration="600">
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-Four" aria-expanded="false" aria-controls="collapse-two-Four">
+                                Do you celebrate birthdays or special events?
+                            </button>
+                            <div id="collapse-two-Four" class="accordion-collapse collapse"  data-bs-parent="#accordionExample-two">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordion-shadow tw-rounded-4xl" data-aos-delay="300" data-aos="fade-up" data-aos-duration="600"> 
+                            <button class="accordion-button collapsed fw-bold tw-text-5 text-neutral-950" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-Five" aria-expanded="false" aria-controls="collapse-two-Five">
+                                What is the student-to-teacher ratio?
+                            </button>
+                            <div id="collapse-two-Five" class="accordion-collapse collapse"  data-bs-parent="#accordionExample-two">
+                                <div class="accordion-body">
+                                    <p class="fw-normal tw-text-4 text-paragraph-500">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1500">
+                <span class="bg-img">
+                    <img src="assets/images/thumbs/faq-img1.png" alt="img" class="bg-img">
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================== faq bottom section end ======================== -->
+
+    <!-- ============================= newsletter section start ============================= -->
+<section class="tw-mb--210-px z-3">
+    <div class="container">
+        <div class="position-relative">
+            <img src="assets/images/shape/newsletter-shape3.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt-4 tw-ms-140-px d-xxl-block d-none shadow-none z-1 animation-upDown">
+            <img src="assets/images/shape/newsletter-shape2.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-110-px tw-ms-106-px z-1 d-xxl-block d-none animation-rotate-right">
+            <img src="assets/images/shape/newsletter-shape1.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-10 tw-me-400-px tw-me-400-px animation-scalation d-xxl-block d-none z-1">
+            <div class="tw-py-99-px bg-main-600 choose-us-musk-bg-img5 tw-px-8">
+                <div class="max-w-750-px w-100 mx-auto">
+                    <div class="text-center tw-mb-8">
+                        <span class="fw-normal tw-text-405 text-white tw-mb-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">Subscribe Newsletter</span>
+                        <h2 class="fw-bold text-white h4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Subscribe to our newsletter for daily updates</h2>
+                    </div>
+                    <form action="#" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <div class="row gy-4">
+                            <div class="col-xl-8">
+                                <input type="email" placeholder="Enter your email" class="tw-py-4 tw-px-6 bg-white w-100 border-0 fw-normal tw-text-305 tw-rounded-2xl text-neutral-600 focus-visible-border-none">
+                            </div>
+                            <div class="col-xl-4">
+                                <div>
+                                    <button type="submit" class="btn btn-main-three hover-style-two button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-rounded-2xl tw-text-4" data-block="button">
+                                        <span class="button__flair"></span>
+                                        <span class="button__label">Explore More</span>
+                                        <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
+                                            <img src="assets/images/icon/banner-icon-white.png" alt="icon">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================= newsletter section end ============================= -->
+
+    <!-- ==================== Footer Start Here ==================== -->
+<footer class="footer bg-main-two-300 position-relative z-2">
+  <img src="assets/images/shape/our-program-shape1.png" alt="shape" class="position-absolute top-0 tw-start-0 w-100">
+  <img src="assets/images/shape/footer-shape1.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt-240-px d-xl-block d-none z-n1 animation-upDown">
+  <img src="assets/images/shape/footer-shape2.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-200-px tw-me-130-px d-xl-block d-none z-n1 animation-upDown">
+  <img src="assets/images/shape/our-program-shaep2.png" alt="shape" class="position-absolute bottom-0 tw-end-0 tw-mb-242-px tw-me-130-px d-xl-block d-none z-n1 animation-scalation">
+  <div class="py-110">
+    <div class="tw-mt-210-px">
+      <div class="container container-two">
+        <div class="row gy-5">
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"> 
+            <div>
+              <a href="index-2.html" class="tw-mb-2">
+                <img src="assets/images/logo/logo.png" alt="logo">
+              </a>
+              <p class="fw-normal tw-text-4 text-paragraph-500 tw-mb-6">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+              <ul class="d-flex align-items-center tw-gap-2 flex-wrap">
+                <li>
+                  <a href="https://www.facebook.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center">
+                    <i class="ph-fill ph-facebook-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center">
+                    <i class="ph-fill ph-twitter-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center">
+                    <i class="ph-fill ph-linkedin-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center">
+                    <i class="ph-fill ph-youtube-logo"></i>
+                  </a>
+                </li>           
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+              <div>
+                <h1 class="fw-bold text-neutral-950 h5">Quick Links</h1>
+                <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+                <div class="d-flex flex-column tw-gap-3">
+                  <a href="apply-for-admission.html" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Admissions
+                  </a>
+                  <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Outdoor Games
+                  </a>
+                  <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Appointment
+                  </a>
+                  <a href="contact-us.html" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+              <div>
+                <h1 class="fw-bold text-neutral-950 h5">Recent Posts</h1>
+                <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+                  <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap tw-mb-4">
+                    <span>
+                      <img src="assets/images/thumbs/footer-img1.png" alt="img">
+                    </span>
+                    <div class="">
+                      <div class="d-flex align-items-center tw-gap-105 tw-mb-1">
+                        <span class="tw-text-5 text-main-600 ">
+                          <i class="ph-bold ph-calendar-dots"></i>
+                        </span>
+                        <span class="fw-semibold tw-text-305 text-main-600">
+                          Jun 26, 2026
+                        </span>
+                      </div>
+                      <a href="blog-details.html" class="fw-bold tw-text-4 text-neutral-950 hover-text-main-600">That jerk Form Finance really threw me</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap tw-mb-4">
+                    <span>
+                      <img src="assets/images/thumbs/footer-img2.png" alt="img">
+                    </span>
+                    <div class="">
+                      <div class="d-flex align-items-center tw-gap-105 tw-mb-1">
+                        <span class="tw-text-5 text-main-600 ">
+                          <i class="ph-bold ph-calendar-dots"></i>
+                        </span>
+                        <span class="fw-semibold tw-text-305 text-main-600">
+                          Feb 20, 2026
+                        </span>
+                      </div>
+                      <a href="blog-details.html" class="fw-bold tw-text-4 text-neutral-950 hover-text-main-600">From without content style without </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <div>
+              <h1 class="fw-bold text-neutral-950 h5">Categories</h1>
+              <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+              <div class="d-flex flex-column tw-gap-3">
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Music Learning
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Sports, Games
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Science Class
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Drawing
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="w-100 tw-border-primary-600 tw-mt-15 tw-mb-15"></span>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="d-flex align-items-center tw-gap-4 flex-wrap">
+              <span class="tw-w-15 tw-h-15 bg-main-600 text-white d-flex align-items-center justify-content-center tw-text-7 rounded-circle">
+                <img src="assets/images/icon/footer-icon1.png" alt="icon">
+              </span>
+              <div>
+                <span class="fw-medium tw-text-4 text-paragraph-600 tw-mb-2
+                ">
+                  Call Us 7/24
+                </span>
+                <h2 class="h5">
+                  <a href="tel:+208-555-0112" class="fw-semibold text-neutral-950">
+                    +208-555-0112
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="d-flex align-items-center tw-gap-4 flex-wrap">
+              <span class="tw-w-15 tw-h-15 bg-main-two-600 text-white d-flex align-items-center justify-content-center tw-text-7 rounded-circle">
+                <img src="assets/images/icon/footer-icon2.png" alt="icon">
+              </span>
+              <div>
+                <span class="fw-medium tw-text-4 text-paragraph-600 tw-mb-2">
+                  Make a Quote
+                </span>
+                <h2 class="h5">
+                  <a href="mailto:kidscholl@gmail.com" class="fw-semibold text-neutral-950">
+                    kidscholl@gmail.com
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <div class="d-flex align-items-center tw-gap-4 flex-wrap">
+              <span class="tw-w-15 tw-h-15 bg-pink-600 text-white d-flex align-items-center justify-content-center tw-text-7 rounded-circle">
+                <img src="assets/images/icon/footer-icon3.png" alt="icon">
+              </span>
+              <div>
+                <span class="fw-medium tw-text-4 text-paragraph-600 tw-mb-2">
+                  Location
+                </span>
+                <h1 class="fw-semibold text-neutral-950 h5">
+                  Elgin St. Celina, NY 10299
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====================== footer bottom section start ====================== -->
+   <div style="background-image: url(assets/images/bg/footer-bottom-bg-img1.png);" class="bg-img">
+    <div class="container">
+      <div class="d-flex align-items-center tw-gap-3 flex-wrap justify-content-between tw-pt-14 tw-pb-6">
+        <span class="fw-normal tw-text-4 text-black">© All Copyright 2026 by Kidscholl</span>
+        <div class="d-flex align-items-center tw-gap-4 flex-wrap">
+          <a href="javascript:void(0)" class="fw-normal tw-text-4 text-black hover-text-black hover-underline tw-duration-300">
+            Terms & Condition
+          </a>
+          <a href="javascript:void(0)" class="fw-normal tw-text-4 text-black hover-text-black hover-underline tw-duration-300">
+             Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- ====================== footer bottom section end ====================== -->
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+    <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- phosphor Js -->
+<script src="assets/js/phosphor-icon.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- swiper js -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!-- aos -->
+<script src="assets/js/aos.js"></script>
+<!-- magnipic -->
+<script src="assets/js/magnipic-popup.js"></script>
+<!-- couterup -->
+<script src="assets/js/counterup.min.js"></script>
+<!-- GSAP js -->
+<script src="assets/js/gsap.min.js"></script>
+<!-- SplitText -->
+<script src="assets/js/SplitText.min.js"></script>
+<!-- Scroll Trigger -->
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<!-- custom GSAP -->
+<script src="assets/js/custom-gsap.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+    <script src="assets/js/cynix-url-params.js"></script>
+
+<!-- Personalization script -->
+<script src="assets/js/personalize.js"></script>
+<script src="../kidschool-main/assets/js/personalization.js"></script>
+</body>
+</html>
+
+ 

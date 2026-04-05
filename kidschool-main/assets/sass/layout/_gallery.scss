@@ -1,0 +1,53 @@
+/* ========================== Gallery Section Css Start =========================== */
+.gallery-thumb {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.gallery-thumb:hover .gallery-thumb__link {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+.gallery-thumb:hover .gallery-thumb__link-two {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-thumb__link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-color: #FC4525AB;
+  border-radius: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery-thumb__link-two {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-color: #FC4525AB;
+  border-radius: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* ========================== Gallery Section Css End =========================== */

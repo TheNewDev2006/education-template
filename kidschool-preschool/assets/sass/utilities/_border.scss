@@ -1,0 +1,78 @@
+// border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .border-#{$color}-#{$shade} {
+        border-color: var(--#{$color}-#{$shade}) !important;
+      }
+    }
+}
+
+// hover border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .hover-border-#{$color}-#{$shade} {
+        &:hover {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+// focus border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .focus-border-#{$color}-#{$shade} {
+        &:focus {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+  .tw-border {
+    &-dashed {
+      border-style: dashed !important;
+    }
+  }
+  
+  .border-transparent {
+    border-color: transparent !important;
+  }
+  .tw-border-bottom-main-two-600 {
+    border-bottom: 4px solid #F9B001;
+  }
+  .tw-border-bottom-white {
+    border-bottom: 2px solid #fff;
+  }
+  .tw-border-gradient {
+    border-image: linear-gradient(90deg, #FC4525 4.85%, rgba(201, 203, 223, 0) 96.39%) 1;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .tw-border-primary-600 {
+    border: 1px dashed #F39F5F;
+  }
+  .tw-border-teacher-main-600 {
+    border: 4px solid #FC4525;
+  }
+  .tw-border-teacher-two-main-600 {
+    border: 4px solid #FF88B0;
+  }
+  .tw-border-teacher-three-main-600 {
+    border: 4px solid #F9B001;
+  }
+  .tw-border-bottom-whiter-600 {
+    border-bottom: 2px solid #ffff;
+  }
+  .tw-border-bottom-header {
+    border-bottom: 3px solid #FC4525;
+  }
+  .tw-border-bottom-our-kindergarden {
+    border-bottom: 3px solid #F9B001;
+  }
+  .tw-border-blog-details {
+    border: 3px solid #FC4525;
+  }
+  .border-white-33-persent {
+    border: 1px solid #FFFFFF61;
+  }

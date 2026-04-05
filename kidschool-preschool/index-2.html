@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Kidschool - Education, Kindergarten, Preschool, and Children Learning Center HTML Template. Creative design, fully responsive, and easy to customize for daycare centers, nursery schools, and childcare institutions.">
+  <meta name="keywords"
+    content="Kidschool, Kindergarten, Preschool, Nursery, Daycare, Children Education, Kids Learning Center, School Website Template, Creative Kids Template, Bootstrap Kidschool">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Kidschool - Preschool & Kindergarten HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!-- magnipic -->
+  <link rel="stylesheet" href="assets/css/magnipic-popup.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!-- ========================== Settings Panel start ==================================== -->
+<div
+  class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center"
+>
+  <button
+    type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center"
+  >
+    <i
+      class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"
+    ></i>
+    <i
+      class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"
+    ></i>
+  </button>
+
+  <div
+    class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto"
+  >
+    <div class="d-flex flex-column tw-gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
+          <button
+            type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
+          >
+            Animate
+          </button>
+          <button
+            type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
+          >
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons d-flex tw-gap-4">
+          <button
+            type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
+          >
+            LTR
+          </button>
+          <button
+            type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
+          >
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="side-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- Custom Toast Message start -->
+  <div id="toast-container"></div>
+  <!-- Custom Toast Message End -->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <div class="progress-wrap cursor-big">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+  <!-- Custom Cursor Start -->
+  <div class="cursor"></div>
+  <span class="dot"></span>
+  <!-- Custom Cursor End -->
+
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-xl-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-white bg-neutral-500 hover-bg-neutral-900 hover-text-white"> 
+        <i class="ph ph-x"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <a href="index-2.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+  <li class="nav-menu__item has-submenu activePage">
+    <a
+      href="javascript:void(0)"
+      class="nav-menu__link tw-pe-5 text-neutral-950 tw-py-5 fw-medium w-100"
+      >Home</a
+    >
+
+    <!-- mega menu start -->
+<div
+  class="mega-menu tw-p-6 tw-rounded-lg scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md tw-duration-200 tw-z-99">
+  <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-4">
+    <div class="col">
+                                                                                        
+        </div>
+    </div>
+</section>
+<!-- ========================== our gallery section end ========================== -->
+
+<!-- ========================== our gallery bottom section start ========================== -->
+ <div class="pb-110">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="d-flex align-items-start tw-gap-5 animation-item">
+                    <span>
+                        <img src="assets/images/icon/our-galler-bottom-icon1.png" alt="icon" class="animate__swing">
+                    </span>
+                    <div>
+                        <span class="fw-semibold tw-text-405 text-neutral-600 tw-mb-3 d-block">Experts Instructors</span>
+                        <h3 class="fw-normal text-main-600 counter">563+</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="d-flex align-items-start tw-gap-5 animation-item">
+                    <span>
+                        <img src="assets/images/icon/our-galler-bottom-icon2.png" alt="icon" class="animate__swing">
+                    </span>
+                    <div>
+                        <span class="fw-semibold tw-text-405 text-neutral-600 tw-mb-3 d-block">Years of Experience</span>
+                        <h3 class="fw-normal text-main-600 counter">55+</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="d-flex align-items-start tw-gap-5 animation-item">
+                    <span>
+                        <img src="assets/images/icon/our-galler-bottom-icon3.png" alt="icon" class="animate__swing">
+                    </span>
+                    <div>
+                        <span class="fw-semibold tw-text-405 text-neutral-600 tw-mb-3 d-block">Our Students</span>
+                        <h3 class="fw-normal text-main-600 counter">46K+</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                <div class="d-flex align-items-start tw-gap-5 animation-item">
+                    <span>
+                        <img src="assets/images/icon/our-galler-bottom-icon4.png" alt="icon" class="animate__swing">
+                    </span>
+                    <div>
+                        <span class="fw-semibold tw-text-405 text-neutral-600 tw-mb-3 d-block">Class Enrolled</span>
+                        <h3 class="fw-normal text-main-600 counter">678+</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ========================== our gallery bottom section end ========================== -->
+
+    <!-- ============================= our process section start ============================= -->
+<section style="background-image: url(assets/images/bg/our-program-two-bg-img.png);" class="bg-img position-relative">
+    <img src="assets/images/shape/our-team-shape1.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-110-px tw-me-130-px animation-scalation d-lg-block d-none">
+    <img src="assets/images/shape/banner-shape4.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt--140-px d-lg-block d-none animation-upDown">
+    <div class="py-110">
+        <div class="tw-mb-332-px">
+            <div class="container">
+                <div class="text-center tw-mb-15">
+                    <span class="fw-normal tw-text-405 text-main-600 tw-mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Our Process</span>
+                    <h2 class="fw-bold text-neutral-950 h4 tw-mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">What is process kidschool?</h2>
+                    <p class="fw-normal tw-text-4 text-paragraph-500" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Wonderful, passionate and committed educators who are working at Skole Learning<br> Centre. Please take a moment to meet invited each of them.</p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="text-center animation-item position-relative">
+                            <div style="background-image: url(assets/images/bg/our-program-two-bg-img2.png);" class="tw-w-100-px tw-h-100-px bg-img d-flex align-items-center justify-content-center position-relative tw-mb-6 mx-auto">
+                                <span>
+                                    <img src="assets/images/icon/our-process-two-icon1.png" alt="icon" class="animate__bounce">
+                                </span> 
+                                <span class="tw-w-9 tw-h-9 tw-text-4 text-pink-600 bg-white d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 tw-end-0">
+                                    01
+                                </span>
+                            </div>
+                            <span class="fw-bold tw-text-5 text-neutral-950 tw-mb-3">See Kids website</span>
+                            <p class="fw-normal tw-text-4 text-paragraph-500">In a free hour, when our power of choice is untrammeled and </p>
+                            <span class="position-absolute top-0 tw-end-0 tw-mt-9 tw-me--40-px d-sm-block d-none">
+                                <img src="assets/images/icon/our-process-two-arrow-icon1.png" alt="icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="text-center animation-item position-relative">
+                            <div style="background-image: url(assets/images/bg/our-program-two-bg-img3.png);" class="tw-w-100-px tw-h-100-px bg-img d-flex align-items-center justify-content-center position-relative tw-mb-6 mx-auto">
+                                <span>
+                                    <img src="assets/images/icon/our-process-two-icon2.png" alt="icon" class="animate__bounce">
+                                </span> 
+                                <span class="tw-w-9 tw-h-9 tw-text-4 text-main-600 bg-white d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 tw-end-0">
+                                    02
+                                </span>
+                            </div>
+                            <span class="fw-bold tw-text-5 text-neutral-950 tw-mb-3">Book visit school</span>
+                            <p class="fw-normal tw-text-4 text-paragraph-500">In a free hour, when our power of choice is untrammeled and </p>
+                            <span class="position-absolute top-0 tw-end-0 tw-mt-9 tw-me--40-px d-sm-block d-none">
+                                <img src="assets/images/icon/our-process-two-arrow-icon2.png" alt="icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="text-center animation-item position-relative">
+                            <div style="background-image: url(assets/images/bg/our-program-two-bg-img1.png);" class="tw-w-100-px tw-h-100-px bg-img d-flex align-items-center justify-content-center position-relative tw-mb-6 mx-auto">
+                                <span>
+                                    <img src="assets/images/icon/our-process-two-icon3.png" alt="icon" class="animate__bounce">
+                                </span> 
+                                <span class="tw-w-9 tw-h-9 tw-text-4 text-main-two-700 bg-white d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 tw-end-0">
+                                    03
+                                </span>
+                            </div>
+                            <span class="fw-bold tw-text-5 text-neutral-950 tw-mb-3">Choose Your Program</span>
+                            <p class="fw-normal tw-text-4 text-paragraph-500">In a free hour, when our power of choice is untrammeled and </p>
+                            <span class="position-absolute top-0 tw-end-0 tw-mt-9 tw-me--40-px d-sm-block d-none">
+                                <img src="assets/images/icon/our-process-two-arrow-icon3.png" alt="icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                        <div class="text-center animation-item">
+                            <div style="background-image: url(assets/images/bg/our-process-two-bg-img1.png);" class="tw-w-100-px tw-h-100-px bg-img d-flex align-items-center justify-content-center position-relative tw-mb-6 mx-auto">
+                                <span>
+                                    <img src="assets/images/icon/our-process-two-icon4.png" alt="icon" class="animate__bounce">
+                                </span> 
+                                <span class="tw-w-9 tw-h-9 tw-text-4 text-gren-700 bg-white d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 tw-end-0">
+                                    04
+                                </span>
+                            </div>
+                            <span class="fw-bold tw-text-5 text-neutral-950 tw-mb-3">Join Our School</span>
+                            <p class="fw-normal tw-text-4 text-paragraph-500">In a free hour, when our power of choice is untrammeled and </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================= our process section end ============================= -->
+
+    <!-- ========================== testimonial section start ========================== -->
+<div class="tw-mt--332-px">
+    <div class="container">
+        <div class="position-relative z-2">
+            <img src="assets/images/shape/footer-shape2.png" alt="shape" class="position-absolute top-0 tw-start-0 z-1 d-xxl-block d-none tw-mt-10 animation-upDown">
+            <img src="assets/images/shape/blog-shape1.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-8 z-1 d-xxl-block d-none animation-upDown">
+            <img src="assets/images/shape/testimonial-two-shape1.png" alt="shape" class="position-absolute top-0 tw-end-0 translate-middle-y top-50 z-1 tw-me-180-px d-xxl-block d-none">
+            <img src="assets/images/shape/our-program-shaep2.png" alt="shape" class="position-absolute bottom-0 tw-end-0 tw-me-250-px d-xxl-block d-none z-1 animation-scalation">
+            <div class="testimonial-two-musk-img1 position-relative">
+                <div class="tw-pt-105-px text-center tw-mb-30-px">
+                    <span class="fw-normal tw-text-405 text-white tw-mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Our Testimonials</span>
+                    <h2 class="fw-bold text-white h4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">What Our Parents Says<br> About Kindergarten</h2>
+                </div>
+                <div class="d-flex align-items-center justify-content-center tw-gap-102-px flex-wrap">
+                    <span class="d-lg-block d-none" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src="assets/images/thumbs/testimonial-two-img1.png" alt="img">
+                    </span>
+                    <div class="max-w-410-px w-100 tw-mb-60-px">
+                        <div class="swiper testimonial-two-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                                    <div>
+                                        <ul class="d-flex align-items-center tw-mb-3">
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                        </ul>
+                                        <p class="fw-bold tw-text-405 text-white tw-mb-8">love this kindergarten! The teachers are incredibly caring and patient, creating a warm and welcoming environment for the children.</p>
+                                        <div class="d-flex align-items-center tw-gap-3">
+                                            <img src="assets/images/thumbs/testimonial-two-img2.png" alt="img">
+                                            <div>
+                                                <span class="fw-bold tw-text-405 text-white tw-mb-1 d-block">
+                                                    John Smith
+                                                </span>
+                                                <span class="fw-normal tw-text-405 text-white">Student Father</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                                    <div>
+                                        <ul class="d-flex align-items-center tw-mb-3">
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                            <li class="tw-text-6 text-white">
+                                                <i class="ph-fill ph-star"></i>
+                                            </li>
+                                        </ul>
+                                        <p class="fw-bold tw-text-405 text-white tw-mb-8">love this kindergarten! The teachers are incredibly caring and patient, creating a warm and welcoming environment for the children.</p>
+                                        <div class="d-flex align-items-center tw-gap-3">
+                                            <img src="assets/images/thumbs/testimonial-two-img2.png" alt="img">
+                                            <div>
+                                                <span class="fw-bold tw-text-405 text-white tw-mb-1 d-block">
+                                                    John Smith
+                                                </span>
+                                                <span class="fw-normal tw-text-405 text-white">Student Father</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-button-two position-absolute top-0 tw-end-0 top-50 translate-middle-y tw-me-17">
+                    <button type="button" id="testimonial-tw-button-next" class="tw-w-11 tw-h-11 bg-white rounded-circle text-main-600 tw-text-405 d-flex align-items-center justify-content-center tw-mb-3 " data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                    <button type="button" id="testimonial-tw-button-prev" class="tw-w-11 tw-h-11 bg-white rounded-circle text-main-600 tw-text-405 d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                        <i class="ph-bold ph-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========================== testimonial section end ========================== -->
+
+    <!-- =========================== contact us section start =========================== -->
+<section class="py-110">
+    <div class="container">
+        <div class="tw-mb-15">
+            <span class="fw-normal tw-text-405 text-main-600 tw-mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Contact Us</span>
+            <h2 class="fw-bold text-neutral-950 h4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Contact Us For Your Kids Learning</h2>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center tw-gap-3 tw-mb-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <span class="tw-w-15 tw-h-15 bg-main-600 text-white d-flex align-items-center justify-content-center rounded-circle tw-text-7">
+                        <i class="ph-fill ph-phone"></i>
+                    </span>
+                    <div>
+                        <span class="fw-medium tw-text-4 text-paragraph-500 tw-mb-1 d-block">Call Us 7/24</span>
+                        <a href="tel:+208-555-0112" class="tw-text-505 fw-semibold text-neutral-950"> 
+                            +208-555-0112
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center tw-gap-3 tw-mb-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <span class="tw-w-15 tw-h-15 bg-pink-600 text-white d-flex align-items-center justify-content-center rounded-circle tw-text-7">
+                        <i class="ph-fill ph-map-pin-area"></i>
+                    </span>
+                    <div>
+                        <span class="fw-medium tw-text-4 text-paragraph-500 tw-mb-1 d-block">Location</span>
+                        <h2 class="fw-semibold text-neutral-950 h5">
+                            Elgin St. Celina, NY 10299
+                        </h2>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center tw-gap-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <span class="tw-w-15 tw-h-15 bg-main-two-600 text-white d-flex align-items-center justify-content-center rounded-circle tw-text-7">
+                        <i class="ph-bold ph-envelope"></i>
+                    </span>
+                    <div>
+                        <span class="fw-medium tw-text-4 text-paragraph-500 tw-mb-1 d-block">Make a Quote</span>
+                        <a href="mailto:kidscholl@gmail.com" class="tw-text-505 fw-semibold text-neutral-950">
+                            kidscholl@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <form action="#">
+                    <div class="row gy-4">
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <input type="text" class="tw-py-3 tw-px-5 bg-main-two-50 border-neutral-100 border tw-rounded-md fw-normal tw-text-4 text-neutral-600 w-100 focus-visible-border-main-600" placeholder="Name">
+                        </div>
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <input type="email" class="tw-py-3 tw-px-5 bg-main-two-50 border-neutral-100 border tw-rounded-md fw-normal tw-text-4 text-neutral-600 w-100 focus-visible-border-main-600" placeholder="Email">
+                        </div>
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <input type="number" class="tw-py-3 tw-px-5 bg-main-two-50 border-neutral-100 border tw-rounded-md fw-normal tw-text-4 text-neutral-600 w-100 focus-visible-border-main-600" placeholder="Phone">
+                        </div>
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <input type="text" class="tw-py-3 tw-px-5 bg-main-two-50 border-neutral-100 border tw-rounded-md fw-normal tw-text-4 text-neutral-600 w-100 focus-visible-border-main-600" placeholder="Department">
+                        </div>
+                        <div class="col-sm-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <textarea class="tw-py-3 tw-px-5 bg-main-two-50 border-neutral-100 border tw-rounded-md fw-normal tw-text-4 text-neutral-600 w-100 focus-visible-border-main-600 tw-h-170-px" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-main-two hover-style-two button--stroke active-scale-094 tw-duration-100 tw-border-bottom-main-two-600 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-rounded-2xl tw-text-4 tw-mt-5" data-block="button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Send Your Message</span>
+                        <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
+                            <img src="assets/images/icon/banner-icon-white.png" alt="icon">
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================== contact us section end =========================== -->
+
+    <!-- ============================== our blog two section start ============================== -->
+<section class="bg-main-two-300 position-relative z-2">
+    <img src="assets/images/shape/our-blog-two-shape1.png" alt="shape" class="position-absolute top-0 tw-start-0 w-100">
+    <img src="assets/images/shape/our-blog-two-shape2.png" alt="shape" class="position-absolute bottom-0 tw-start-0 w-100 z-n1">
+    <div class="tw-mt-200-px tw-mb-278-px">
+        <div class="py-110">
+            <div class="container">
+                <div class="text-center tw-mb-17">
+                    <span class="fw-normal tw-text-405 text-main-600 tw-mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Our Blog & News</span>
+                    <h2 class="fw-bold text-neutral-950 h4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">View Our Latest Blog,<br> Trends and Insights</h2>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="animation-item">
+                            <div class="bg-img position-relative overflow-hidden tw-rounded-top-20-px">
+                                <img src="assets/images/thumbs/our-blog-two-img1.png" alt="img" class="bg-img course-item__img tw-duration-300">
+                                <span class="fw-semibold tw-text-4 text-white tw-py-105 tw-px-6 rounded-pill bg-main-two-600 position-absolute bottom-0 tw-start-0 tw-ms-7 tw-mb-7">
+                                    Education
+                                </span>
+                            </div>
+                            <div class=" bg-white tw-p-8 tw-rounded-bottom-20-px"> 
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-6">
+                                    <span class="tw-text-405 text-main-600 ">
+                                        <i class="ph-bold ph-calendar-dots"></i>
+                                    </span>
+                                    <span class="fw-normal tw-text-4 text-neutral-600">
+                                        12 June, 2026
+                                    </span>
+                                </div>
+                                <h2 class="tw-mb-5 h4">
+                                    <a href="blog-details.html" class="fw-bold tw-text-7 text-neutral-950">How to Prepare Your Child for Their First Day of Children</a>
+                                </h2>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-3">
+                                    <div class="d-flex align-items-center tw-gap-2">
+                                        <img src="assets/images/thumbs/blog-img4.png" alt="igm">
+                                        <div>
+                                            <span class="fw-bold tw-text-4 text-neutral-950 d-block tw-mb-1">John Smith</span>
+                                            <span class="fw-normal tw-text-4 text-neutral-600">Blog Writer</span>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details.html" class="tw-w-10 tw-h-10 border-main-600 border rounded-circle d-flex align-items-center justify-content-center tw-text-405 text-main-600 hover-bg-main-600 hover-text-white tw-duration-300">
+                                        <i class="ph-bold ph-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="animation-item">
+                            <div class="bg-img position-relative overflow-hidden tw-rounded-top-20-px">
+                                <img src="assets/images/thumbs/our-blog-two-img2.png" alt="img" class="bg-img course-item__img tw-duration-300">
+                                <span class="fw-semibold tw-text-4 text-white tw-py-105 tw-px-6 rounded-pill bg-main-two-600 position-absolute bottom-0 tw-start-0 tw-ms-7 tw-mb-7">
+                                    Education
+                                </span>
+                            </div>
+                            <div class=" bg-white tw-p-8 tw-rounded-bottom-20-px"> 
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-6">
+                                    <span class="tw-text-405 text-main-600 ">
+                                        <i class="ph-bold ph-calendar-dots"></i>
+                                    </span>
+                                    <span class="fw-normal tw-text-4 text-neutral-600">
+                                        12 June, 2026
+                                    </span>
+                                </div>
+                                <h2 class="tw-mb-5 h4">
+                                    <a href="blog-details.html" class="fw-bold tw-text-7 text-neutral-950">
+                                        Discovering the Joys of Child Kindergarten...
+                                    </a>
+                                </h2>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-3">
+                                    <div class="d-flex align-items-center tw-gap-2">
+                                        <img src="assets/images/thumbs/blog-img4.png" alt="igm">
+                                        <div>
+                                            <span class="fw-bold tw-text-4 text-neutral-950 d-block tw-mb-1">John Smith</span>
+                                            <span class="fw-normal tw-text-4 text-neutral-600">Blog Writer</span>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details.html" class="tw-w-10 tw-h-10 border-main-600 border rounded-circle d-flex align-items-center justify-content-center tw-text-405 text-main-600 hover-bg-main-600 hover-text-white tw-duration-300">
+                                        <i class="ph-bold ph-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================== our blog two section end ============================== -->
+
+    <!-- ========================== get start now section start ========================== -->
+<div class="tw-mt--278-px z-3">
+    <div class="container">
+        <div class="bg-main-600 tw-rounded-4xl tw-px-90-px position-relative">
+            <img src="assets/images/shape/get-start-now-two-shape3.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt-10 tw-ms--66-px  animation-upDown d-xl-block d-none">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="tw-py-15">
+                        <span class="fw-normal tw-text-405 text-white tw-mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Get Started Now</span>
+                        <h2 class="fw-bold text-white h4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">How to enroll your child to a class?</h2>
+                        <p class="fw-normal tw-text-4 text-white tw-mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">We are excited and pleased to introduce you to the wonderful, passionate and committed educators who are working at Skole Learning Centre.</p>
+                        <a href="apply-for-admission.html" class="btn btn-main-three hover-style-two button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-rounded-2xl tw-text-4" data-block="button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Book Your Visit</span>
+                            <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
+                                <img src="assets/images/icon/banner-icon-white.png" alt="icon">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative d-lg-block d-none">
+                        <img src="assets/images/shape/get-start-now-two-shape1.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-mt-17 d-xl-block d-none animation-scalation">
+                        <img src="assets/images/shape/get-start-now-two-shape2.png" alt="shape" class="position-absolute bottom-0 tw-start-0 tw-mb-7 tw-ms--50-px animation-upDown d-xl-block d-none">
+                        <span class="d-flex align-items-center justify-content-center tw-mt-30-px" data-aos="zoom-in" data-aos-duration="1500">
+                            <img src="assets/images/thumbs/get-start-now-two-img1.png" alt="img">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========================== get start now section end ========================== -->
+
+    <!-- ==================== Footer Start Here ==================== -->
+<footer class="footer position-relative z-2 overflow-hidden">
+    <img src="assets/images/shape/newsletter-shape2.png" alt="shape" class="position-absolute top-0 tw-start-0 tw-ms-110-px z-n1 d-xl-block d-none animation-rotate">
+    <img src="assets/images/shape/blog-shape1.png" alt="shape" class="position-absolute bottom-0 tw-start-0 tw-mb-10 tw-ms-110-px d-xl-block d-none animation-upDown z-n1">
+  <div class="py-110 position-relative">
+    <img src="assets/images/shape/banner-shape4.png" alt="shape" class="position-absolute tw-end-0 bottom-0 tw-me--54-px d-xl-block d-none animation-upDown">
+    <img src="assets/images/shape/our-pricing-shape1.png" alt="shape" class="position-absolute bottom-0 tw-start-0 tw-w-106-px tw-h-84-px tw-ms-500-px d-xl-block d-none animation-rotate tw-mb-10">
+      <div class="container container-two">
+        <div class="row gy-5">
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"> 
+            <div>
+              <a href="index-2.html" class="tw-mb-2">
+                <img src="assets/images/logo/logo.png" alt="logo">
+              </a>
+              <p class="fw-normal tw-text-4 text-paragraph-500 tw-mb-6">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+              <ul class="d-flex align-items-center tw-gap-2 flex-wrap">
+                <li>
+                  <a href="https://www.facebook.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center border-neutral-900 border">
+                    <i class="ph-fill ph-facebook-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center border-neutral-900 border">
+                    <i class="ph-fill ph-twitter-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center border-neutral-900 border">
+                    <i class="ph-fill ph-linkedin-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" class="tw-w-9 tw-h-9 bg-white text-black tw-rounded-lg hover-bg-main-600 hover-text-white tw-duration-300 tw-text-405 d-flex align-items-center justify-content-center border-neutral-900 border">
+                    <i class="ph-fill ph-youtube-logo"></i>
+                  </a>
+                </li>           
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+              <div>
+                <h2 class="fw-bold text-neutral-950 h5">Quick Links</h2>
+                <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+                <div class="d-flex flex-column tw-gap-4">
+                  <a href="apply-for-admission.html" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Admissions
+                  </a>
+                  <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Outdoor Games
+                  </a>
+                  <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Appointment
+                  </a>
+                  <a href="contact-us.html" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                    <span class="tw-text-405 ">
+                      <i class="ph-bold ph-caret-double-right"></i>
+                    </span>
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+              <div>
+                <h2 class="fw-bold text-neutral-950 h5">Recent Posts</h2>
+                <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+                  <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap tw-mb-4">
+                    <span>
+                      <img src="assets/images/thumbs/footer-img1.png" alt="img">
+                    </span>
+                    <div class="">
+                      <div class="d-flex align-items-center tw-gap-105 tw-mb-1">
+                        <span class="tw-text-5 text-main-600 ">
+                          <i class="ph-bold ph-calendar-dots"></i>
+                        </span>
+                        <span class="fw-semibold tw-text-305 text-main-600">
+                          Jun 26, 2024
+                        </span>
+                      </div>
+                      <a href="blog-details.html" class="fw-bold tw-text-4 text-neutral-950 hover-text-main-600">That jerk Form Finance really threw me</a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap tw-mb-4">
+                    <span>
+                      <img src="assets/images/thumbs/footer-img2.png" alt="img">
+                    </span>
+                    <div class="">
+                      <div class="d-flex align-items-center tw-gap-105 tw-mb-1">
+                        <span class="tw-text-5 text-main-600 ">
+                          <i class="ph-bold ph-calendar-dots"></i>
+                        </span>
+                        <span class="fw-semibold tw-text-305 text-main-600">
+                          Feb 20, 2024
+                        </span>
+                      </div>
+                      <a href="blog-details.html" class="fw-bold tw-text-4 text-neutral-950 hover-text-main-600">From without content style without </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+              <h2 class="fw-bold text-neutral-950 h5">Categories</h2>
+              <span class="tw-w-82-px tw-h-05 tw-border-gradient tw-mb-7 tw-mt-5"></span>
+              <div class="d-flex flex-column tw-gap-5">
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Music Learning
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Sports, Games
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Science Class
+                </a>
+                <a href="javascript:void(0)" class="tw-text-4 text-paragraph-600 d-flex align-items-center tw-gap-2 hover-text-main-600 tw-duration-300">
+                  <span class="tw-text-405 ">
+                    <i class="ph-bold ph-caret-double-right"></i>
+                  </span>
+                  Drawing
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- ====================== footer bottom section start ====================== -->
+   <div style="background-image: url(assets/images/bg/footer-bottom-bg-img1.png);" class="bg-img">
+    <div class="container">
+      <div class="d-flex align-items-center tw-gap-3 flex-wrap justify-content-between tw-pt-14 tw-pb-6">
+        <span class="fw-normal tw-text-4 text-white">© All Copyright 2024 by Kidscholl</span>
+        <div class="d-flex align-items-center tw-gap-4 flex-wrap">
+          <a href="javascript:void(0)" class="fw-normal tw-text-4 text-white hover-text-white">
+            Terms & Condition
+          </a>
+          <a href="javascript:void(0)" class="fw-normal tw-text-4 text-white hover-text-white">
+             Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- ====================== footer bottom section end ====================== -->
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+    <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- phosphor Js -->
+<script src="assets/js/phosphor-icon.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- swiper js -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!-- aos -->
+<script src="assets/js/aos.js"></script>
+<!-- magnipic -->
+<script src="assets/js/magnipic-popup.js"></script>
+<!-- couterup -->
+<script src="assets/js/counterup.min.js"></script>
+<!-- GSAP js -->
+<script src="assets/js/gsap.min.js"></script>
+<!-- SplitText -->
+<script src="assets/js/SplitText.min.js"></script>
+<!-- Scroll Trigger -->
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<!-- custom GSAP -->
+<script src="assets/js/custom-gsap.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+    <script src="assets/js/cynix-url-params.js"></script>
+
+<!-- Personalization script -->
+<script src="assets/js/personalize.js"></script>
+<script src="../kidschool-main/assets/js/personalization.js"></script>
+</body>
+</html>

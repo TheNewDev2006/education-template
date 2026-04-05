@@ -1,0 +1,36 @@
+.play-button::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #f9af0194;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-animation: animate 2.3s ease-out infinite;
+    animation: animate 2.3s ease-out infinite;
+}
+.play-button-two::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #fc4525b6;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-animation: animate 2.3s ease-out infinite;
+    animation: animate 2.3s ease-out infinite;
+}
+
+
+
+.kindergarden-two-card {
+    transition: .5s;
+    &:hover {
+        .kindergarden-two-text {
+            display: block;
+        }
+    }
+}
+.kindergarden-two-text {
+    display: none;
+}

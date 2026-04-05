@@ -1,0 +1,169 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pangolin&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$colors: (
+  "main": (
+    "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
+    "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
+    "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
+    "300": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.6)),
+    "400": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.5)),
+    "500": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.4)),
+    "600": hsl(var(--main-h), var(--main-s), var(--main-l)), // main theme color
+    "700": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1)),
+    "800": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2)),
+    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
+  ),
+  "main-two": (
+    "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
+    "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
+    "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
+    "300": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.6)),
+    "400": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.5)),
+    "500": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.4)),
+    "600": hsl(var(--main-two-h), var(--main-two-s), var(--main-two-l)), // main two theme color
+    "700": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1)),
+    "800": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2)),
+    "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
+  ),
+  
+  "neutral": (
+    "10": #F8F8F6,
+    "50": #F6F6F6,
+    "100": #D9D9D9,
+    "200": #E5E5E5,
+    "300": #DBDBDB,
+    "400": #9ca3af,
+    "500": #5C6672,
+    "600": #4b5563,
+    "700": #636D6C,
+    "800": #1f2937,
+    "900": #07071336,
+    "950": #070713,
+    "1000": #02023F,
+  ),
+  "paragraph": (
+    "500": #5C707E,
+    "600": #385469,
+  ),
+  "primary": (
+    "50": #4198d723,
+    "100": #7B0EC214,
+    "600": #4198D7,
+    "700": #003566,
+  ),
+  "pink": (
+    "50": #ff88b026,
+    "600": #FF88B0,
+  ),
+  "purple": (
+    "50": #b72ee517,
+    "400": #48058DDB,
+    "500": #48058D,
+    "600": #B82EE5,
+  ),
+  "gren": (
+    "10": #75c1372b,
+    "50": #75c13788,
+    "600": #75C137,
+  ),
+  "blue": (
+    "100": #413A7B26,
+    "200": #00356626,
+  ),
+);
+
+// Space
+$spaces: (
+  "05": #{rem(2px)}, 
+  "1": #{rem(4px)},
+  "105": #{rem(6px)},
+  "2": #{rem(8px)},
+  "205": #{rem(10px)},
+  "3": #{rem(12px)},
+  "305": #{rem(14px)},
+  "4": #{rem(16px)},
+  "405": #{rem(18px)},
+  "5": #{rem(20px)},
+  "505": #{rem(22px)},
+  "6": #{rem(24px)},
+  "605": #{rem(26px)},
+  "7": #{rem(28px)},
+  "705": #{rem(30px)},
+  "8": #{rem(32px)},
+  "9": #{rem(36px)},
+  "10": #{rem(40px)},
+  "11": #{rem(44px)},
+  "12": #{rem(48px)},
+  "13": #{rem(52px)},
+  "14": #{rem(56px)},
+  "15": #{rem(60px)},
+  "16": #{rem(64px)},
+  "17": #{rem(68px)},
+);
+
+$font-sizes: (
+  "xs": #{rem(12px)},
+  "sm": #{rem(14px)},
+  "base": #{rem(16px)},
+  "lg": #{rem(18px)},
+  "xl": #{rem(20px)},
+  "2xl": #{rem(24px)},
+  "3xl": #{rem(30px)},
+);
+
+/* ========================= Variable Css Start ======================== */
+:root {    
+  /* Font Family Variable */
+  --heading-font: 'Nunito', 'Love Ya Like A Sister';
+  --body-font: 'Source Sans Pro', 'Pangolin';
+  
+  /* Font Size Variable Start */
+  --heading-one: clamp(2.25rem, 1.4368rem + 4.3369vw, 5.5rem); // Min:36px - Max:88px
+  --heading-two: clamp(1.625rem, 1.0496rem + 3.0687vw, 4.5rem); // Min: 32px - Max: 72px
+  --heading-three: clamp(1.875rem, 1.2608rem + 3.2757vw, 4.125rem); // Min: 30px - Max: 66px
+  --heading-four: clamp(1.75rem, 1.3405rem + 2.1838vw, 3.25rem); // Min: 28px - Max: 52px
+  --heading-five: clamp(1.125rem, 1.0416rem + 0.4449vw, 1.375rem); // Min: 18px - Max: 22px
+  --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem); // Min: 16px - Max-20px
+  /* Font Size End */
+
+  /* template main color */
+  --main-h: 9;
+  --main-s: 97%;
+  --main-l: 57%;
+  --main: var(--main-h) var(--main-s) var(--main-l);
+
+  --main-two-h: 42;
+  --main-two-s: 99%;
+  --main-two-l: 49%;
+  --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+
+   /* White Color */
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+  --body: 0 0% 43%;
+  
+  --heading-color: #000 !important;
+  --body-color: var(--body);
+
+  --translate-x-50: translateX(-50%); 
+  --translate-y-50: translateY(-50%); 
+    
+  // spacing
+  @each $property, $value in $spaces {
+    --size-#{$property}: #{$value};
+  }
+  
+  // Colors
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // font sizes
+  @each $property, $value in $font-sizes {
+    --font-#{$property}: #{$value};
+  }  
+}
+/* ========================= Variable Css End ======================== */

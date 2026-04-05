@@ -1,0 +1,18 @@
+.gradient-width-200::before, .gradient-width-200::after {
+    width: 200px;
+}
+.left-right-gradient::before, .left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    z-index: 2;
+}
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, #ffffff);
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}

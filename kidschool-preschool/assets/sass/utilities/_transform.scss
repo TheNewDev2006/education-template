@@ -1,0 +1,28 @@
+/* Transform Css Start */
+.origin-left {
+  transform-origin: left;
+}
+
+.object-top {
+  object-position: top;
+}
+
+.tw-transform-roted-7 {
+  transform: rotate(7deg);
+  @media (max-width: 992px) {
+    transform: rotate(0deg);
+  }
+}
+.tw-transform-roted--9 {
+  transform: rotate(-9deg);
+  @media (max-width: 992px) {
+    transform: rotate(0deg);
+  }
+}
+.tw_transform-roted--9 {
+  transform: rotate(-9deg);
+  @media (max-width: 1199px) {
+    transform: rotate(0deg);
+  }
+}
+/* Transform Css End */

@@ -1,0 +1,40 @@
+.our-teacher-link {
+    display: none !important;
+    transition: 4s !important;
+}
+.our-teacher-thumb{
+    &:hover {
+        .our-teacher-link {
+            display: block !important;
+        }
+    }
+}
+
+
+
+// ===================== pricing css start ====================
+.our-pricing-card {
+    transition: .5s !important;
+}
+.our-pricing-plan-text-bottom {
+    // display: none !important;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    // transition: .5s;
+}
+
+.our-pricing-card:hover {
+    background-color: #F9B001 !important;
+    .our-pircing-text {
+        color: #fff !important;
+    }
+    .our-pricing-plan-text-bottom {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        // display: block !important;
+    }
+}
+
+// ===================== pricing css end ====================
